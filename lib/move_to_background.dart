@@ -1,4 +1,6 @@
 /// This library is a wrapper for iOS and Android to send the application to the background programmatically.
+library;
+
 import 'move_to_background_platform_interface.dart';
 
 /// A class containing the static function used.

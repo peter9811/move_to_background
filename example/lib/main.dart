@@ -13,10 +13,10 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        MoveToBackground.moveTaskToBack();
-        return false;
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (final bool onPop) async {
+        if (!onPop) return MoveToBackground.moveTaskToBack();
       },
       child: MaterialApp(
         home: Scaffold(
