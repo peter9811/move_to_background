@@ -28,7 +28,7 @@ android {
 		if (project.android.hasProperty("namespace")) {
         namespace 'com.sayegh.move_to_background'
     }
-    compileSdkVersion 33
+    compileSdk 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -44,6 +44,6 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdk 16
     }
 }
